@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Database</title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+
+    <script src="fb.js"></script>
+</head>
+<body bgcolor="skyblue">
+
+   <center> <h1>FireBase Database</h1></center>
+    <form>
+        <center>Username:</center> 
+        <center><input type="text" id="username"></center><br>
+        <center>Password:</center>  
+        <center><input type="password" id="password"></center><br><br>
+       <center> <input value="INSERT" type="button" onclick="insert()">
+        <input value="UPDATE" type="button" onclick="update()">
+        <input value="DELETE" type="button"  onclick="deleterec()">
+        <input value="DISPLAY" type="button"  onclick="display()"></center>
+    </form>
+
+    <table id="table" align="center">
+        <tr><th></th><th></th></tr>
+    </table>
+</body>
+</html>
